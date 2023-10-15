@@ -1,5 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@600;700&display=swap");
+
+$primary-font: Poppins;
+$secondary-font: Mulish;
+$tertiary-color: #009379;
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  & .header-logo {
+    padding-block: 1.2rem;
+    width: 11rem;
+  }
+  & .navbar {
+    display: none;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 2rem;
+  gap: 2.5rem;
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20rem;
+    gap: 1.2rem;
+
+    & .container__title {
+      font-family: $primary-font;
+      font-weight: 700;
+      font-size: 2.4rem;
+      text-align: center;
+    }
+
+    & .container__text {
+      font-family: $secondary-font;
+      font-weight: 400;
+      font-size: 1rem;
+      text-align: center;
+    }
+    & .menu {
+      list-style: none;
+      & .menu__item {
+        & .menu__item1 {
+          text-decoration: none;
+          background-color: $tertiary-color;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 1rem;
+          width: 14rem;
+          height: 4rem;
+          font-family: $primary-font;
+          font-weight: 600;
+          gap: 1rem;
+        }
+        & .menu__item2 {
+          text-decoration: none;
+          background-color: white;
+          color: black;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          border-radius: 1rem;
+          width: 20rem;
+          height: 4rem;
+          font-family: $secondary-font;
+          font-weight: 400;
+          font-size: 1.3rem;
+          gap: 1.2rem;
+          padding-inline-start: 0.75rem;
+        }
+      }
+      & .menu__item--visible {
+        display: none;
+      }
+    }
+  }
+  & .image-container {
+    max-width: 20rem;
+
+    & .image-container__image {
+      max-width: 20rem;
+    }
+  }
 }
