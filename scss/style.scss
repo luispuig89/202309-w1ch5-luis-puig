@@ -13,6 +13,7 @@ $tertiary-color: #009379;
 .header {
   display: flex;
   justify-content: center;
+  background-color: #eff2ff;
   & .header-logo {
     padding-block: 1.2rem;
     width: 11rem;
@@ -28,6 +29,7 @@ $tertiary-color: #009379;
   align-items: center;
   padding-block: 2rem;
   gap: 2.5rem;
+  background-color: #eff2ff;
 
   & .container {
     display: flex;
@@ -43,6 +45,10 @@ $tertiary-color: #009379;
       text-align: center;
     }
 
+    & .container__title--lighter {
+      font-weight: 600;
+    }
+
     & .container__text {
       font-family: $secondary-font;
       font-weight: 400;
@@ -52,6 +58,7 @@ $tertiary-color: #009379;
     & .menu {
       list-style: none;
       & .menu__item {
+        padding-block-end: 1.2rem;
         & .menu__item1 {
           text-decoration: none;
           background-color: $tertiary-color;
@@ -73,19 +80,121 @@ $tertiary-color: #009379;
           display: flex;
           justify-content: flex-start;
           align-items: center;
-          border-radius: 1rem;
+          border-radius: 1.2rem;
           width: 20rem;
-          height: 4rem;
+          height: 5.6rem;
           font-family: $secondary-font;
           font-weight: 400;
           font-size: 1.3rem;
           gap: 1.2rem;
           padding-inline-start: 0.75rem;
+          border: 1px solid #e5f4f2;
         }
       }
       & .menu__item--visible {
         display: none;
       }
+    }
+
+    & .card {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border-radius: 1.2rem;
+      align-items: flex-start;
+      gap: 0.8rem;
+      padding-block-end: 1.8rem;
+
+      & .card__title {
+        font-family: $primary-font;
+        font-weight: 600;
+        font-size: 1.8rem;
+        padding-inline-start: 1.2rem;
+      }
+
+      & .card__title--smaller {
+        font-size: 1.3rem;
+        padding-inline-start: 0rem;
+      }
+
+      & .card__title--xsmaller {
+        font-family: $secondary-font;
+        font-size: 1.3rem;
+        font-weight: 400;
+        padding-block-start: 2.5rem;
+      }
+
+      & .card__text {
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: 1rem;
+        padding-inline-start: 1.2rem;
+      }
+
+      & .card__text--smaller {
+        font-size: 0.9rem;
+        padding-inline-start: 0rem;
+      }
+
+      & .card__text--bigger {
+        font-family: $primary-font;
+        font-weight: 700;
+        font-size: 3.1rem;
+      }
+
+      & .card__text--bolder {
+        font-weight: 700;
+      }
+
+      & .card__pricing {
+        display: flex;
+        align-items: baseline;
+      }
+
+      & .card__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        list-style: none;
+        font-family: $secondary-font;
+        font-weight: 700;
+        gap: 1rem;
+        padding-inline-start: 1.2rem;
+      }
+      & .card__button {
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        background-color: #e5f4f2;
+        color: #009379;
+        border-radius: 1.2rem;
+        width: 16rem;
+        height: 4rem;
+        font-family: $primary-font;
+        font-weight: 600;
+      }
+    }
+    & .card--enterprise {
+      background-color: #009379;
+      color: white;
+    }
+
+    & .card--align {
+      padding-block-start: 2.5rem;
+      align-items: center;
+      & .card__text {
+        text-align: center;
+      }
+    }
+  }
+
+  & .container--width {
+    width: 20rem;
+    & .card__pricing {
+      width: 20rem;
     }
   }
   & .image-container {
@@ -95,4 +204,28 @@ $tertiary-color: #009379;
       max-width: 20rem;
     }
   }
+}
+
+.wrapper {
+  display: flex;
+  max-width: 20rem;
+  gap: 1.2rem;
+  & .container--align {
+    flex-direction: column;
+    border-inline-start: 4px solid #f2bfaf;
+    width: 10rem;
+    padding-inline-start: 1.2rem;
+    gap: 0rem;
+  }
+}
+.section--background-color {
+  padding-block-start: 6rem;
+  background-color: #f8d57e;
+  & .container--gap {
+    gap: 3.75rem;
+  }
+}
+
+.check--color {
+  fill: white;
 }
