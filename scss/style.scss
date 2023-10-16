@@ -45,6 +45,13 @@ $tertiary-color: #009379;
       text-align: center;
     }
 
+    & .container__subtitle {
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: 1.3rem;
+      align-self: flex-start;
+    }
+
     & .container__title--lighter {
       font-weight: 600;
     }
@@ -54,6 +61,19 @@ $tertiary-color: #009379;
       font-weight: 400;
       font-size: 1rem;
       text-align: center;
+    }
+
+    & .container-images {
+      display: flex;
+      gap: 1rem;
+      align-self: flex-start;
+    }
+
+    & .info {
+      display: flex;
+      align-self: flex-start;
+      align-items: center;
+      gap: 1rem;
     }
     & .menu {
       list-style: none;
@@ -204,6 +224,11 @@ $tertiary-color: #009379;
       max-width: 20rem;
     }
   }
+  & .container--border {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2.5rem;
+  }
 }
 
 .wrapper {
@@ -226,6 +251,157 @@ $tertiary-color: #009379;
   }
 }
 
-.check--color {
-  fill: white;
+.footer {
+  background-color: #2d2d2d;
+  padding: 1.5rem 1.2rem 1.5rem 1.2rem;
+  font-family: $secondary-font;
+  color: white;
+  font-weight: 400;
+  font-size: 0.9rem;
+  .footer__address {
+    padding-block-start: 1.2rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .header {
+    justify-content: space-between;
+    padding: 1.2rem 3rem;
+    .navbar {
+      display: flex;
+
+      .menu {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        & .menu__item {
+          text-decoration: none;
+          background-color: $tertiary-color;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 1rem;
+          width: 12rem;
+          height: 4rem;
+          font-family: $primary-font;
+          font-weight: 600;
+          gap: 1rem;
+
+          & a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            gap: 1rem;
+          }
+          & .menu__item1--color {
+            color: #009379;
+          }
+        }
+
+        & .menu__item--back1 {
+          background-color: #e5f4f2;
+        }
+        & .menu__item--back2 {
+          background-color: #eff2ff;
+        }
+      }
+    }
+  }
+
+  .section {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 7.5rem 3.4rem;
+    & .container {
+      max-width: fit-content;
+      align-items: flex-start;
+
+      & .container__title {
+        text-align: left;
+        font-size: 4rem;
+      }
+      & .container__text {
+        text-align: left;
+        font-size: 1.3rem;
+      }
+      & .menu {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1rem;
+        & .menu__item--visible {
+          text-decoration: none;
+          background-color: white;
+          color: $tertiary-color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 1rem;
+          border: #009379 1px solid;
+          width: 14rem;
+          height: 4rem;
+          font-family: $primary-font;
+          font-weight: 600;
+          gap: 1rem;
+          align-items: flex-end;
+          & a {
+            text-decoration: none;
+            color: #009379;
+          }
+        }
+      }
+    }
+    & .container--reverse {
+      flex-direction: row-reverse;
+    }
+
+    & .image-container {
+      max-width: 28rem;
+      & .image-container__image {
+        max-width: 28rem;
+        width: 28rem;
+      }
+    }
+  }
+  .section--reverse {
+    flex-direction: row-reverse;
+    & .container {
+      flex-wrap: wrap;
+      & .menu {
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+    }
+  }
+  .section--column {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    & .container {
+      align-items: center;
+      align-self: center;
+      & .container__title {
+        text-align: center;
+      }
+    }
+    & .container--row {
+      flex-direction: row;
+      align-self: flex-start;
+    }
+  }
+  .section--height {
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 9rem;
+    .wrapper {
+      gap: 5rem;
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
