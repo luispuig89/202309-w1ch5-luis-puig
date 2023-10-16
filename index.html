@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <meta name="description" content="Challenge 5 Week 1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="description" content="Landing Page Website">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -15,18 +17,18 @@
     <img class="header-logo" src="images/logo.svg" alt="logo landing pages">
     <nav class="navbar">
       <ul class="menu">
-        <li class="menu__item">
-          <a href="">
+        <li class="menu__item menu__item--back2">
+          <a class="menu__item1--color" href="">
             Contact
           </a>
         </li>
-        <li class="menu__item">
-          <a href="">
+        <li class="menu__item  menu__item--back1">
+          <a class="menu__item1--color" href="">
             How it works
           </a>
         </li>
         <li class="menu__item">
-          <a href="">
+          <a href=""><img src="images/rocketlaunch.svg" alt="logo cohete" width="20">
             Get Started
           </a>
         </li>
@@ -56,7 +58,7 @@
     <div class="image-container"><img class="image-container__image" src="images/phone1.svg"
         alt="phone sketch showing features website"></div>
   </section>
-  <section class="section">
+  <section class="section section--reverse">
     <div class="container">
       <h1 class="container__title">Our features</h1>
       <p class="container__text">Few good reasons why you should use Anima Landing Page Ui Kit to make your own pages.
@@ -91,13 +93,13 @@
     <div class="image-container"><img class="image-container__image" src="images/phone2.svg"
         alt="phone sketch showing upload image"></div>
   </section>
-  <section class="section">
+  <section class="section section--column">
     <div class="container">
       <h1 class="container__title container__title--lighter">Selected Works</h1>
       <p class="container__text">Explore our portfolio and see the latest projects that we've brought to life.
       </p>
     </div>
-    <div class="container">
+    <div class="container container--row">
       <div class="card">
         <img class="card__image" src="images/beaver1.png" alt="Photo of a beaver face">
         <h2 class="card__title">
@@ -136,13 +138,13 @@
       </div>
     </div>
   </section>
-  <section class="section section--background-color">
+  <section class="section section--background-color section--column">
     <div class="container">
       <h1 class="container__title">Real Stories from Satisfied Customers</h1>
       <p class="container__text">See how our landing page ui kit is making an impact.
       </p>
     </div>
-    <div class="container container--gap">
+    <div class="container container--gap container--row">
       <div class="card card--align">
         <img class="card__image" src="images/otter1.png" alt="Photo of a otter face">
         <h2 class="card__title card__title--smaller">
@@ -187,13 +189,13 @@
       </div>
     </div>
   </section>
-  <section class="section">
+  <section class="section section--column section--align">
     <div class="container">
       <h1 class="container__title container__title--lighter">Pick Your Perfect Plan</h1>
       <p class="container__text">Find the perfect plan for your business with our flexible pricing options.
       </p>
     </div>
-    <div class="container container--width">
+    <div class="container container--width container--row">
       <div class="card">
         <h2 class="card__title card__title--xsmaller">
           Free
@@ -250,7 +252,7 @@
       </div>
     </div>
   </section>
-  <section class="section">
+  <section class="section section--height">
     <div class="container">
       <h1 class="container__title">Our Metrics Tell the Story</h1>
       <p class="container__text">Our metrics component gives you the inside scoop on your success and helps you stay on
@@ -278,6 +280,39 @@
       </div>
     </div>
   </section>
+  <section class="section">
+    <div class="container container--border">
+      <h1 class="container__title">Let's get in touch!</h1>
+      <p class="container__text">Got questions about the Landing Page UI Kit? Our team is here to help. Contact us for
+        quick and friendly support.
+      </p>
+      <div class="info">
+        <img class="info__image" src="images/phonecall.svg" alt="phonecall" width="24">
+        <p>+012 345 6789</p>
+      </div>
+      <div class="info">
+        <img img class="info__image" src="images/mail.svg" alt="email" width="24">
+        <p>Hello@animaapp.com</p>
+      </div>
+      <h2 class="container__subtitle">Connect with us</h2>
+      <div class="container-images">
+        <img src="images/socials1.svg" alt="Instagram">
+        <img src="images/socials2.svg" alt="Basket">
+        <img src="images/socials3.svg" alt="Be">
+        <img src="images/socials4.svg" alt="Twitter">
+      </div>
+
+    </div>
+  </section>
+  <footer class="footer"">
+    <div class=" container-images">
+    <img src="images/socials5.svg" alt="Instagram">
+    <img src="images/socials6.svg" alt="Basket">
+    <img src="images/socials7.svg" alt="Be">
+    <img src="images/socials8.svg" alt="Twitter">
+    </div>
+    <address class="footer__address">© 2023 Anima Landing Page Ui Kit.</address>
+  </footer>
 </body>
 
 </html>
